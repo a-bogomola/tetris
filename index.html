@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset = "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris Game</title> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="start-screen" class="overlay">
+        <div class="modal">
+            <h1>Sasha's Tetris</h1>
+            <p>How to Play:</p>
+            <div class = "instructions">
+                <div><img src="left.png" alt="Left Arrow"><img src="right.png" alt="Right Arrow"> Move Left/Right</div>
+                <div><img src="up.png" alt="Up Arrow"> Rotate</div>
+                <div><img src="down.png" alt="Down Arrow"> Soft Drop</div>
+                <div><img src="space.png" alt="Spacebar"> Hard Drop</div>
+                </div>
+            <button id="start-button">Start Game</button>
+        </div>
+    </div>
+    <main id="game-main" style="display: none;">
+        <div id="game-container">
+            
+            <div id="gameboard-wrapper">
+                <div id="gameboard"></div>
+                <div id="high-score-container">
+                    <p>High Score: <span id="high-score">0</span></p>
+                </div>
+            </div>
+
+            <header>
+                <h1 class="tetris-header">Sasha's Tetris</h1>
+                <div id = "game-info">
+                    <h2>Score: <span id="score">0</span></h2>
+                    <h2>Level: <span id="level">1</span></h2>
+                </div>
+                <div id="next-tetromino-container">
+                    <h2>Next:</h2>
+                    <div id="next-tetromino"></div>
+                </div>
+            </header>
+        </div>
+    </main>
+
+    <div id="gameover-screen" class="overlay" style="display: none;">
+        <div class="modal">
+            <h1>Game Over!</h1>
+            <button id="play-again">Play Again</button>
+        </div>
+    </div>
+
+    <script src="render.js"></script>
+    <script src="my_tetris.js"></script>
+</body>
+</html>

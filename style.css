@@ -1,0 +1,189 @@
+/* General Page styling */
+body {
+    margin: 0;
+    font-family: 'Monaco', sans-serif;
+    background-color: #faf0e6;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    padding-left: 35px;
+}
+
+/* Game container */
+#game-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* Board + high score */
+#gameboard-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: left;   
+}
+
+/* Tetris playing field */
+#gameboard{
+    display: grid;
+    grid-template-rows: repeat(20, 22px);
+    grid-template-columns: repeat(10, 22px);
+    gap: 1px;
+    background-color: #E6E6FA;
+    border: 3px solid #702963;
+    flex-grow: 1;
+}
+
+/* Header Styling */
+header {
+    margin-left: 20px;
+}
+
+/* Tetris Game Title */
+.tetris-header {
+    color: #702963;
+    font-family: 'Monaco', monospace;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 0;
+    padding-top: 0;
+}
+
+/* Individual Tetris Cells */
+.cell {
+    width: 22px;
+    height: 22px;
+}
+
+/* Scoring and level box */
+#game-info {
+    color: #702963;
+    font-size: 16px;
+    font-family: 'Monaco', monospace;
+    text-transform: uppercase;
+
+    background-color: #E6E6FA;
+    border: 3px solid #702963;
+    padding: 15px; 
+    border-radius: 10px; 
+    width: auto; 
+    min-width: 200px;
+    max-width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Start and Game Over Screens */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+/* Modal Box (used for Start & Game Over Screens */
+.modal {
+    background-color: #faf0e6;
+    color: #702963;
+    font-family: 'Monaco', monospace;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Title inside the Modal (Start & Game Over) */
+.modal h1 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+/* Buttons inside Modal (Start and Play Again) */
+.modal button {
+    background-color: #702963;
+    color: #faf0e6;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s ease-in-out;
+}
+
+/* Button Hover Effect */
+.modal button:hover {
+    background-color: #5a1e5d; /* Slightly darker purple */
+}
+
+/* Instruction Section in Start Screen */
+.instructions {
+  display: flex;
+  flex-direction: column;
+  gap: 5px; 
+  text-align: left;
+}
+
+/* Individual instruction row (to align text with image) */
+.instructions div {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+/* Instruction Icons (Left, Right, Up, Down, Spacebar) */
+.instructions img {
+  width: 25px;
+  height: auto;
+  margin-right: 6px;
+}
+
+/* Container for next tetromino */
+#next-tetromino-container {
+    color: #702963;
+    font-size: 16px;
+    font-family: 'Monaco', monospace;
+    text-transform: uppercase;
+
+    background-color: #E6E6FA;
+    border: 3px solid #702963;
+    padding: 15px; 
+    border-radius: 10px; /* Rounded edges */
+    width: auto; 
+    min-width: 200px;
+    max-width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Next tetromino display*/
+#next-tetromino {
+    display: grid;
+    grid-template-rows: repeat(4, 22px);
+    grid-template-columns: repeat(4, 22px);
+    gap: 1px;
+    background-color: #E6E6FA;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 5px;
+    justify-content: center;
+
+}
+
+/* High score display*/
+#high-score-container {
+    text-align: left;
+    font-size: 12px;  /* Small text */
+    color: #702963;   /* Slightly muted */
+    margin-top: 5px;  /* Space below gameboard */
+    font-family: 'Monaco', monospace;
+}
