@@ -1,18 +1,22 @@
 # Welcome to My Tetris
-***
-
-## Task
-Create my own tetris with different functionalities like showing next tetromino, recording score and high score etc
+A simple browser-based implementation of the classic Tetris game, built from scratch using HTML, CSS, and JavaScript.
 
 ## Description
-I have wrote a tetris logic in my_tetris.js, index.html and style.css are responible for front-end and render.js is rendering both parts.
-This makes it MVC framework
+Keyboard-controlled piece moement and rotation
+Blocks fall automatically with increasing difficulty
+Line-clearing and scroting system
+Clean and repsonsive UI layout
+Build using HTML, CSS and JavaScript
 
-## Installation
-All you need
+## Learning
+Through this project, I practiced:
+> Building an interactive game using pure JavaScript
+> Creating and updating elements on the screen in real time
+> Handling keyboard events and user input
+> Structuring code to keep it readable and maintainable
 
 ## Usage
-TODO - How does it work?
-```
-./my_project argument1 argument2
-```
+1. Clone the reprository
+2. Open index.html in your browser
+
+Have fun playing!
